@@ -1,4 +1,3 @@
-import React from 'react';
 import Battleship from '../pages/Battleship';
 import './index.scss';
 

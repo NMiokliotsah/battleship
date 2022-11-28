@@ -1,0 +1,19 @@
+.row {
+  display: flex;
+}
+
+.cell {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.nonClickable  {
+  pointer-events: none;
+}
