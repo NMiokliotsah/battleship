@@ -13,8 +13,12 @@ function BattleShipBoarder({ handleOnClick }: IBattleShipBoarderProps) {
   return <div className={style.board}>
     <div className={style.wrapper}>
       <div className={style.container}>
-        {boarder.map(row => {
-          return <BattleshipRow row={row} handleOnClick={handleOnClick} />
+        {boarder.map((row, index) => {
+          return <BattleshipRow
+            key={index}
+            row={row}
+            handleOnClick={handleOnClick}
+          />
         })}
       </div>
     </div>

@@ -5,7 +5,6 @@ import {
   CarrierShape,
   CruiserShape,
   SubmarineShape,
-  MissSmall,
 } from '../../../shared/assets';
 
 
@@ -40,8 +39,6 @@ export const getShips = () => {
   const result: Array<IShipInfo> = [];
 
   for (let key in shipsTypes) {
-    const arr = [];
-
     const ship = ships.layout.find(ship => ship.ship === key);
     const positions: Array<string> = ship!.positions.map(elem => `${elem[0]}:${elem[1]}`);
 

@@ -8,11 +8,19 @@ interface IDamageStatus {
 function DamageStatus({ damageShipImages, misImages }: IDamageStatus) {
   return <div className={style.damageStatus}>
     <div>
-      {damageShipImages && damageShipImages.map((src: string) => {
-        return <img src={src} alt="damage image" />
+      {damageShipImages && damageShipImages.map((src: string, index) => {
+        return <img
+          key={index}
+          src={src}
+          alt="damage"
+        />
       })}
-      {misImages && misImages.map((src: string) => {
-        return <img src={src} alt="miss image" />
+      {misImages && misImages.map((src: string, index) => {
+        return <img
+          key={index}
+          src={src}
+          alt="miss"
+        />
       })}
     </div>
   </div>

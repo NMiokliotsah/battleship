@@ -11,7 +11,8 @@ const ships = getShips();
 
 function ShipStatus({ hitPosition }: IShipStatus) {
   return <div className={style.ships}>
-    {ships.map(ship => <ShipInfo
+    {ships.map((ship, index) => <ShipInfo
+      key={index}
       hitPosition={hitPosition}
       shipImg={ship.shipImg}
       size={ship.size}

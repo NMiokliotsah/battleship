@@ -9,8 +9,11 @@ interface IBattleshipRow {
 
 function BattleshipRow({ row, handleOnClick }: IBattleshipRow) {
   return <div className={style.row}>
-    {row.map(state => {
-      return <BattleShipCell state={state} setHitShip={handleOnClick} />
+    {row.map((state, index) => {
+      return <BattleShipCell
+        key={index}
+        state={state}
+        setHitShip={handleOnClick} />
     })}
   </div>
 }
