@@ -1,16 +1,22 @@
 import { useState } from 'react';
 import BattleShipBoarder from "../../entities/BattleShipBoarder";
+import ShipStatus from '../../entities/ShipStatus/ui/ShipStatus';
+import Users from '../../entities/Users';
+
+import style from './Battleship.module.scss';
 
 function Battleship() {
-  const [hitPosition, setHitPosition] = useState<Array<string>>([]);
+  const [hitPosition, setHitPosition] = useState('');
 
   const handleOnClick = (position: any, e: any) => {
     if (position) {
-      setHitPosition([...hitPosition, position]);
+      setHitPosition(position);
     }
   }
 
-  return <div>
+  return <div className={style.battleship}>
+    <Users />
+    <ShipStatus hitPosition={hitPosition} />
     <BattleShipBoarder handleOnClick={handleOnClick} />
   </div>
 }

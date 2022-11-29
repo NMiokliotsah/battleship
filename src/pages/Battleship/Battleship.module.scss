@@ -1,0 +1,10 @@
+.battleship {
+  display: grid;
+  grid-template:
+    "a a c c"
+    "b b c c"
+    "b b c c";
+  justify-content: center;
+  padding-top: 20px;
+  gap: 15px;
+}

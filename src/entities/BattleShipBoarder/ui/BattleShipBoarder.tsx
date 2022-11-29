@@ -1,6 +1,8 @@
 import BattleshipRow from "./BattleshipRow";
 import { getBoarder } from "../model";
 
+import style from './BattleShipBoarder.module.scss'
+
 const boarder = getBoarder()
 
 interface IBattleShipBoarderProps {
@@ -8,10 +10,14 @@ interface IBattleShipBoarderProps {
 }
 
 function BattleShipBoarder({ handleOnClick }: IBattleShipBoarderProps) {
-  return <div>
-    {boarder.map(row => {
-      return <BattleshipRow row={row} handleOnClick={handleOnClick} />
-    })}
+  return <div className={style.board}>
+    <div className={style.wrapper}>
+      <div className={style.container}>
+        {boarder.map(row => {
+          return <BattleshipRow row={row} handleOnClick={handleOnClick} />
+        })}
+      </div>
+    </div>
   </div>
 }
 

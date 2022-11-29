@@ -1,0 +1,16 @@
+.damageStatus {
+  padding-left: 20px;
+
+  img {
+    height: 20px;
+    padding: 0 5px;
+  }
+
+  .damageStatusImg {
+    position: relative;
+
+    .hitImg {
+      position: absolute;
+    }
+  }
+}

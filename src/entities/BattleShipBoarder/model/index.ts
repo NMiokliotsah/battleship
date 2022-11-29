@@ -1,4 +1,4 @@
-import battleship from './battleship.json';
+import { getShipsPosition } from '../../../shared/api';
 
 const defaultBoard: Array<Array<number | string>> = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -12,12 +12,6 @@ const defaultBoard: Array<Array<number | string>> = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
-
-export const getShipsPosition = () => {
-  const layout = battleship.layout;
-
-  return layout.map(elem => elem.positions);
-}
 
 export const getBoarder = () => {
   const positions = getShipsPosition();
