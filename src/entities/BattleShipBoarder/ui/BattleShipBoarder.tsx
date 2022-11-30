@@ -1,3 +1,4 @@
+import React from "react";
 import BattleshipRow from "./BattleshipRow";
 import { getBoarder } from "../model";
 
@@ -25,4 +26,4 @@ function BattleShipBoarder({ handleOnClick }: IBattleShipBoarderProps) {
   </div>
 }
 
-export default BattleShipBoarder;
+export default React.memo(BattleShipBoarder);

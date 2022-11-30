@@ -1,3 +1,4 @@
+import React from "react";
 import BattleShipCell from "./BattleShipCell";
 
 import style from './BattleShipBoarder.module.scss';
@@ -18,4 +19,4 @@ function BattleshipRow({ row, handleOnClick }: IBattleshipRow) {
   </div>
 }
 
-export default BattleshipRow;
+export default React.memo(BattleshipRow);

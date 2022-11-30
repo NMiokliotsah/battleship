@@ -1,3 +1,4 @@
+import React from 'react';
 import User from "../../shared/ui/User";
 
 import style from './Users.module.scss';
@@ -9,4 +10,4 @@ function Users() {
   </div>
 }
 
-export default Users;
+export default React.memo(Users);

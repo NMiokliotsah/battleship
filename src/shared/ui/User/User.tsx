@@ -1,3 +1,4 @@
+import React from 'react';
 import cn from 'classnames';
 
 import style from './User.module.scss';
@@ -14,4 +15,4 @@ function User({ name, styles }: IUSer) {
   </div>
 }
 
-export default User;
+export default React.memo(User);

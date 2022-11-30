@@ -1,3 +1,4 @@
+import React from 'react';
 import { Hit, Miss } from '../../../shared/assets';
 import cn from 'classnames';
 
@@ -18,4 +19,4 @@ function BattleShipCell({ state, setHitShip }: IBattleShipCellProps) {
   </div>
 }
 
-export default BattleShipCell;
+export default React.memo(BattleShipCell);

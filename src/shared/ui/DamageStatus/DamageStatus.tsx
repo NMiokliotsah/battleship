@@ -1,3 +1,5 @@
+import React from 'react';
+
 import style from './DamageStatus.module.scss';
 
 interface IDamageStatus {
@@ -26,4 +28,4 @@ function DamageStatus({ damageShipImages, misImages }: IDamageStatus) {
   </div>
 }
 
-export default DamageStatus;
+export default React.memo(DamageStatus);

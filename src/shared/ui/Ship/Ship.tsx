@@ -1,3 +1,4 @@
+import React from 'react';
 import style from './Ship.module.scss';
 
 interface IShip {
@@ -8,4 +9,4 @@ function Ship({ shipImg }: IShip) {
   return <img className={style.shipImage} src={shipImg} alt="ship" />
 }
 
-export default Ship;
+export default React.memo(Ship);
