@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import BattleShipBoarder from "../../entities/BattleShipBoarder";
-import ShipStatus from '../../entities/ShipStatus/ui/ShipStatus';
+import ShipStatus from '../../entities/ShipStatus';
 import Users from '../../entities/Users';
 
 import style from './Battleship.module.scss';
