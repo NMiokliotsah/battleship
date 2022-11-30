@@ -5,9 +5,23 @@
 }
 
 .firstUser {
-  background-color: #ffb000;
+  background-color: var(--color-yellow);
 }
 
 .secondUser {
-  background-color: #25b79f;
+  background-color: var(--color-green);
+}
+
+@media (max-width: 1100px) {
+  .users {
+    height: 140px;
+    width: 210px;
+  }
+}
+
+@media (max-width: 700px) {
+  .users {
+    height: 140px;
+    width: 100%;
+  }
 }

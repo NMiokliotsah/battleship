@@ -15,8 +15,8 @@ function ShipInfo({ shipImg, size, positions, hitPosition }: IShipProps) {
   const { misImages, damageShipImages } = useHitImages(positions, hitPosition, size);
 
   return <div className={style.ship}>
-    <Ship shipImg={shipImg} />
-    <DamageStatus damageShipImages={damageShipImages} misImages={misImages} />
+      <Ship shipImg={shipImg} />
+      <DamageStatus damageShipImages={damageShipImages} misImages={misImages} />
   </div>
 }
 

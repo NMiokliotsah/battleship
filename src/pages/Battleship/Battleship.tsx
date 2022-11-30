@@ -15,9 +15,9 @@ function Battleship() {
   }
 
   return <div className={style.battleship}>
+    <BattleShipBoarder handleOnClick={handleOnClick} />
     <Users />
     <ShipStatus hitPosition={hitPosition} />
-    <BattleShipBoarder handleOnClick={handleOnClick} />
   </div>
 }
 

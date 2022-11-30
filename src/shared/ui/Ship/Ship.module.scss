@@ -1,3 +1,9 @@
 .shipImage {
   height: 50px;
 }
+
+@media (max-width: 1100px) {
+  .shipImage {
+    height: 20px;
+  }
+}
